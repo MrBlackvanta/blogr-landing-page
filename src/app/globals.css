@@ -76,6 +76,22 @@
   );
 }
 
+@utility v-shell {
+  @apply mx-auto w-full px-6;
+  max-width: calc(var(--container-shell) + 3rem);
+}
+
+@utility v-hero-pattern {
+  background: url("/bg-pattern-intro-mobile.svg") no-repeat
+    calc(50% + 138px) -244px / 1323px;
+
+  @media (width >= 64rem) {
+    background-image: url("/bg-pattern-intro-desktop.svg");
+    background-position: calc(50% + 428px) -1342px;
+    background-size: 3174px;
+  }
+}
+
 @utility v-focus-ring {
   &:focus-visible {
     outline: 3px solid var(--focus-ring, var(--color-ink));
@@ -99,6 +115,7 @@
   html {
     @apply font-sans;
     color-scheme: light;
+    interpolate-size: allow-keywords;
     overflow-y: scroll;
   }
 
@@ -112,5 +129,15 @@
 
   source {
     display: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+    }
   }
 }

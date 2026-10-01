@@ -67,7 +67,12 @@ export default function RootLayout({
       lang="en"
       className={`${overpass.variable} ${ubuntu.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <a href="#main" className="v-skip-link">
+          Skip to content
+        </a>
+        {children}
+      </body>
     </html>
   );
 }
