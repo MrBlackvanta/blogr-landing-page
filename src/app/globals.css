@@ -9,17 +9,12 @@
   --color-ink-soft: #4c5862;
   --color-brand: #df3145;
   --color-brand-soft: #ed6b77;
-  --color-flare-from: #ff8f71;
-  --color-flare-to: #ff3e55;
+  --color-flare-from: #ff6f48;
+  --color-flare-to: #ff1531;
   --color-dusk-from: #2d2e40;
   --color-dusk-to: #3f4164;
   --color-midnight: #24242c;
   --color-hairline: #e8e4e4;
-  --color-halo-outer: #cacbcf;
-  --color-halo-inner: #9696a0;
-  --color-halo-dusk-outer: #c3c6c8;
-  --color-halo-dusk-inner: #878d92;
-  --color-halo-fill: #3e4062;
 
   --text-display: 2.25rem;
   --text-display--line-height: 1.53;
