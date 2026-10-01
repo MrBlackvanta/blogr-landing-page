@@ -4,6 +4,100 @@
 @theme {
   --font-sans: var(--font-overpass), ui-sans-serif, system-ui, sans-serif;
   --font-ui: var(--font-ubuntu), ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #1f3e5a;
+  --color-ink-soft: #4c5862;
+  --color-brand: #df3145;
+  --color-brand-soft: #ed6b77;
+  --color-flare-from: #ff8f71;
+  --color-flare-to: #ff3e55;
+  --color-dusk-from: #2d2e40;
+  --color-dusk-to: #3f4164;
+  --color-midnight: #24242c;
+  --color-hairline: #e8e4e4;
+  --color-halo-outer: #cacbcf;
+  --color-halo-inner: #9696a0;
+  --color-halo-dusk-outer: #c3c6c8;
+  --color-halo-dusk-inner: #878d92;
+  --color-halo-fill: #3e4062;
+
+  --text-display: 2.25rem;
+  --text-display--line-height: 1.53;
+  --text-display--letter-spacing: -0.03em;
+  --text-display-lg: 4rem;
+  --text-display-lg--line-height: 1.53;
+  --text-display-lg--letter-spacing: -0.03em;
+
+  --text-title: 1.75rem;
+  --text-title--line-height: 1.536;
+  --text-title--letter-spacing: -0.03em;
+  --text-title-lg: 2.5rem;
+  --text-title-lg--line-height: 1.525;
+  --text-title-lg--letter-spacing: -0.03em;
+
+  --text-feature: 1.75rem;
+  --text-feature--line-height: 1.143;
+  --text-feature-lg: 1.75rem;
+  --text-feature-lg--line-height: 1;
+
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.556;
+  --text-lead-lg: 1.25rem;
+  --text-lead-lg--line-height: 1.55;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.75;
+  --text-body--letter-spacing: 0.03125em;
+  --text-submenu: 1rem;
+  --text-submenu--line-height: 1.75;
+
+  --text-nav: 1rem;
+  --text-nav--line-height: 1.125;
+
+  --text-sitemap: 1.125rem;
+  --text-sitemap--line-height: 1.833;
+  --text-sitemap-lg: 0.9375rem;
+  --text-sitemap-lg--line-height: 2.2;
+
+  --radius-panel: 5px;
+  --radius-band: 100px;
+  --shadow-panel: 0 20px 40px rgb(0 0 0 / 0.24);
+  --container-shell: 69.375rem;
+}
+
+@utility v-flare {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-flare-from),
+    var(--color-flare-to)
+  );
+}
+
+@utility v-dusk {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-dusk-from),
+    var(--color-dusk-to)
+  );
+}
+
+@utility v-focus-ring {
+  &:focus-visible {
+    outline: 3px solid var(--focus-ring, var(--color-ink));
+    outline-offset: 3px;
+  }
+}
+
+@utility v-on-flare {
+  --focus-ring: var(--color-white);
+}
+
+@utility v-skip-link {
+  @apply sr-only;
+
+  &:focus {
+    @apply rounded-panel font-ui text-nav text-ink shadow-panel not-sr-only fixed top-4 left-4 z-50 bg-white px-5 py-3 font-bold;
+  }
 }
 
 @layer base {
@@ -11,6 +105,10 @@
     @apply font-sans;
     color-scheme: light;
     overflow-y: scroll;
+  }
+
+  body {
+    @apply text-ink-soft bg-white;
   }
 
   button:not(:disabled) {
