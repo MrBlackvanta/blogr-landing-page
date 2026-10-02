@@ -3,3 +3,8 @@ export type NavGroup = {
   label: string;
   links: string[];
 };
+
+export type Feature = {
+  title: string;
+  body: string;
+};
