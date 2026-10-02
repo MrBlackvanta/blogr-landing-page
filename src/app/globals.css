@@ -92,6 +92,15 @@
   }
 }
 
+@utility v-circles-pattern {
+  background: url("/bg-pattern-circles.svg") no-repeat 50% -237px / 602px;
+
+  @media (width >= 64rem) {
+    background-position: calc(50% - 426px) -509px;
+    background-size: 1014px;
+  }
+}
+
 @utility v-focus-ring {
   &:focus-visible {
     outline: 3px solid var(--focus-ring, var(--color-ink));

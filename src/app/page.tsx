@@ -1,5 +1,5 @@
 import { Header } from "@/components/layout";
-import { Features, Hero } from "@/views/home";
+import { Features, Hero, Infrastructure } from "@/views/home";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <main id="main">
         <Hero />
         <Features />
+        <Infrastructure />
       </main>
     </>
   );
