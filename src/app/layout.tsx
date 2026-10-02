@@ -15,6 +15,7 @@ const ubuntu = Ubuntu({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
 const name = "Blogr";

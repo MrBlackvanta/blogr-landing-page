@@ -112,6 +112,10 @@
   --focus-ring: var(--color-white);
 }
 
+@utility v-on-flare {
+  --focus-ring: var(--color-midnight);
+}
+
 @utility v-skip-link {
   @apply sr-only;
 

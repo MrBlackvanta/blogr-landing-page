@@ -9,7 +9,7 @@ const barClasses =
   "h-0.5 w-8 shrink-0 rounded-full bg-white transition duration-200";
 
 const panelLinkClasses =
-  "v-focus-ring text-lead text-ink lg:v-on-dark lg:font-ui lg:text-nav font-semibold lg:font-bold lg:hover:text-white";
+  "v-focus-ring text-lead text-ink lg:v-on-flare lg:font-ui lg:text-nav font-semibold lg:font-bold lg:hover:text-white";
 
 export default function MainNav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,7 +56,7 @@ export default function MainNav() {
         aria-expanded={menuOpen}
         aria-controls="main-menu"
         onClick={() => setMenuOpen(!menuOpen)}
-        className="v-focus-ring v-on-dark -m-2 box-content flex h-4.5 w-8 flex-col justify-between p-2 lg:hidden"
+        className="v-focus-ring v-on-flare -m-2 box-content flex h-4.5 w-8 flex-col justify-between p-2 lg:hidden"
       >
         <span
           className={`${barClasses} ${menuOpen ? "translate-y-2 rotate-45" : ""}`}
@@ -135,7 +135,7 @@ export default function MainNav() {
           </a>
           <PillButton
             variant="brand"
-            className="lg:v-on-dark lg:text-brand lg:hover:bg-brand lg:bg-white lg:hover:text-white"
+            className="lg:v-on-flare lg:text-brand lg:hover:bg-brand lg:bg-white lg:hover:text-white"
           >
             Sign Up
           </PillButton>
