@@ -7,9 +7,9 @@ type PillButtonProps = {
 };
 
 const variantClasses = {
-  light: "v-on-flare bg-white text-brand hover:bg-brand hover:text-white",
+  light: "v-on-dark bg-white text-brand hover:bg-brand hover:text-white",
   outline:
-    "v-on-flare border border-white text-white hover:bg-white hover:text-brand",
+    "v-on-dark border border-white text-white hover:bg-white hover:text-brand",
   brand: "bg-brand text-white hover:bg-white hover:text-brand",
 };
 

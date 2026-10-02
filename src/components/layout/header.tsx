@@ -9,7 +9,7 @@ export default function Header() {
         <Link
           href="/"
           aria-label="Blogr home"
-          className="v-focus-ring v-on-flare"
+          className="v-focus-ring v-on-dark"
         >
           <BlogrLogo className="h-8 w-auto text-white lg:h-10" />
         </Link>

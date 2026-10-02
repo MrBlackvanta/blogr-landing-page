@@ -1,4 +1,4 @@
-import { Header } from "@/components/layout";
+import { Footer, Header } from "@/components/layout";
 import { Features, Hero, Infrastructure, OpenSource } from "@/views/home";
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
         <Infrastructure />
         <OpenSource />
       </main>
+      <Footer />
     </>
   );
 }

@@ -108,7 +108,7 @@
   }
 }
 
-@utility v-on-flare {
+@utility v-on-dark {
   --focus-ring: var(--color-white);
 }
 
