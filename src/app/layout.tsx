@@ -26,7 +26,7 @@ const shareImage = {
   url: "/opengraph-image.jpg",
   width: 1200,
   height: 630,
-  alt: "The Blogr wordmark above the headline “A modern publishing platform”.",
+  alt: "Two phones showing the Blogr app, beside the headline “A modern publishing platform”.",
 };
 
 export const metadata: Metadata = {
