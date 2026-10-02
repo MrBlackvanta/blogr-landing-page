@@ -32,7 +32,7 @@ export default function Features() {
             />
           </picture>
 
-          <div className="mx-auto flex max-w-135 flex-col gap-10 text-center lg:mx-0 lg:w-135 lg:max-w-1/2 lg:shrink-0 lg:translate-y-3.5 lg:gap-19.5 lg:text-left">
+          <div className="mx-auto flex max-w-79.5 flex-col gap-10 text-center sm:max-w-135 lg:mx-0 lg:w-135 lg:max-w-1/2 lg:shrink-0 lg:translate-y-3.5 lg:gap-19.5 lg:text-left">
             {editorFeatures.map(({ title, body }) => (
               <article key={title}>
                 <h3 className="text-feature lg:text-feature-lg text-ink font-semibold">
